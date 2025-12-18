@@ -18,3 +18,10 @@ jobs:  # This workflow contains a single job called "build"
       # Runs a set of commands using the runners shell
       - name: Print Good Bye
         run: echo "Done - bye!"
+      # If you need to run multiple shell commands (or multi-line commands, e.g., for readability), you can easily do so by adding the pipe symbol (|) as a value after the run: key.
+        # Like this:
+        # ...
+        # run: |
+        #     echo "First output"
+        #     echo "Second output"
+      #This will run both commands in one step.
