@@ -10,8 +10,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.wsfipdj.mongodb.net
-      MONGODB_USERNAME: Uday_db
-      MONGODB_PASSWORD: DbPass
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
